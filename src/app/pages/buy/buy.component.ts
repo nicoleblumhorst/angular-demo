@@ -12,7 +12,7 @@ import { Car } from '../../shared/models/car.model';
   templateUrl: './buy.component.html',
   styleUrls: ['./buy.component.scss']
 })
-export class BuyComponent {
+export class BuyComponent implements OnInit {
   readonly Color = Color;
 
   makes: Brand[];
@@ -28,8 +28,10 @@ export class BuyComponent {
     public router: Router,
     private parkingLotService: ParkingLotService,
     private vehicleService: BrandsService
-  ) {
-    vehicleService.getVehicleMakes().subscribe(
+  ) {}
+
+  ngOnInit(): void {
+    this.vehicleService.getVehicleMakes().subscribe(
       data => {
         this.makes = data;
         this.newCar.controls.make.setValue(data[0]);

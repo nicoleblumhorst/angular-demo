@@ -1,6 +1,6 @@
 <div class="parking-lot">
   <h3>Lot A</h3>
-  <div class="lot">
+  <div class="lot" *ngIf="cars.length > 0">
     <div *ngFor="let car of cars" class="car" [ngClass]="car.color | lowercase" (click)="viewCarDetails(car)">
       <p>{{car.year}}</p>
       <p>{{car.make | uppercase}}</p>
@@ -9,3 +9,4 @@
   </div>
 </div>
 <p class="availablity">Current Lot Occupancy: {{cars.length}}</p>
+

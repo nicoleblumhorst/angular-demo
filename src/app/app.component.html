@@ -1,0 +1,20 @@
+<app-spinner></app-spinner>
+<header>
+  <mat-toolbar color="primary">
+    <p>Welcome to the {{ title }}!</p>
+    <nav>
+      <button mat-button routerLink="/buy-a-car" routerLinkActive="active" color="accent">Buy A Car</button>
+      <button mat-button routerLink="/parking-lot" routerLinkActive="active" color="accent">Parking Lot</button>
+    </nav>
+  </mat-toolbar>
+</header>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<footer>
+  <a routerLink="/tools">Other Angular Tools</a>
+</footer>
+
+

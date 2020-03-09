@@ -1,0 +1,31 @@
+<form [formGroup]="newCar" (ngSubmit)="onSubmit(newCar.value)">
+    <mat-form-field>
+        <mat-label>Year</mat-label>
+        <input matInput type="number" formControlName="year"/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Make</mat-label>
+        <mat-select type="text" formControlName="make" (selectionChange)="onMakeSelected($event.value)">
+          <mat-option *ngFor="let make of makes" [value]="make">
+            {{ make.name }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Model</mat-label>
+        <mat-select type="text" formControlName="model">
+          <mat-option *ngFor="let model of models" [value]="model">
+            {{ model }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Color</mat-label>
+        <mat-select type="text" formControlName="color">
+            <mat-option *ngFor="let color of Color | enum" [value]="color">
+                {{ color }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-flat-button type="submit" [disabled]="!newCar.valid" color="primary">Buy</button>
+</form>

@@ -28,8 +28,6 @@ import { MaterialModule } from './shared/modules/material.module';
     BrowserAnimationsModule
   ],
   providers: [
-    ParkingLotService,
-    BrandsService,
     SpinnerService,
     { provide: HTTP_INTERCEPTORS, useClass: LogInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true }

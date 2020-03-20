@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LotComponent } from './pages/lot/lot.component';
-import { BuyComponent } from './pages/buy/buy.component';
-import { ToolsComponent } from './pages/tools/tools.component';
+import { ParkingLotComponent } from './parking-lot/parking-lot/parking-lot.component';
+import { BuyComponent } from './parking-lot/buy/buy.component';
+import { ToolsComponent } from './tools/tools.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/parking-lot', pathMatch: 'full' },
   { path: 'buy-a-car', component: BuyComponent },
-  { path: 'parking-lot', component: LotComponent },
+  { path: 'parking-lot', component: ParkingLotComponent },
   { path: 'tools', component: ToolsComponent }
 ];
 

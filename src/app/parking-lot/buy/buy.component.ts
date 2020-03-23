@@ -47,7 +47,7 @@ export class BuyComponent implements OnInit {
   }
 
   onSubmit(newCar) {
-    this.parkingLotService.buyCar(new Car(newCar.year, newCar.make.name, newCar.model, newCar.color));
+    this.parkingLotService.buyCar(new Car(newCar.year, newCar.make.name, newCar.model, newCar.color, 0));
     this.router.navigateByUrl('/parking-lot');
   }
 

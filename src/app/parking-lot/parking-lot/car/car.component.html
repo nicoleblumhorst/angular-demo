@@ -1,0 +1,6 @@
+<div class="car" [ngClass]="car.color | lowercase" (click)="clicked.emit()">
+  <p>{{ car.year }}</p>
+  <p>{{ car.make | uppercase }}</p>
+  <p>{{ car.model | uppercase }}</p>
+</div>
+<div class="tire"></div>

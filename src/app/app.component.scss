@@ -1,21 +1,26 @@
-.container {
-    margin: 10px;
+.content {
+  margin: 10px 10px 80px;
 }
 
 .active {
-    color: lightgray;
+  color: lightgray;
 }
 
 mat-toolbar {
   display: flex;
   justify-content: space-between;
+
+  img {
+    width: 40px;
+  }
 }
 
 footer {
-  background-color: #d3d3d333;
+  background-color: #eeeeee;
   width: 100vw;
-  padding: 20px 0px ;
-  position: absolute;
+  padding: 20px 0px;
+  position: fixed;
+  left: 0;
   bottom: 0;
   display: flex;
   justify-content: center;

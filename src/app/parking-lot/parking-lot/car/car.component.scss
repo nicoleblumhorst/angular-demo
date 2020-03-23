@@ -1,0 +1,57 @@
+.car {
+  height: 150px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.black {
+    background-color: black;
+    color: white;
+  }
+
+  &.silver {
+    background-color: silver;
+    color: black;
+  }
+
+  &.white {
+    background-color: white;
+    color: black;
+  }
+
+  &.red {
+    background-color: maroon;
+    color: white;
+  }
+
+  &.orange {
+    background-color: darkorange;
+    color: black;
+  }
+
+  &.yellow {
+    background-color: yellow;
+    color: black;
+  }
+
+  &.green {
+    background-color: darkgreen;
+    color: white;
+  }
+
+  &.blue {
+    background-color: navy;
+    color: white;
+  }
+
+  &.purple {
+    background-color: rebeccapurple;
+    color: white;
+  }
+}

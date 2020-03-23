@@ -9,10 +9,11 @@ import { EnumPipe } from '../shared/pipes/enum.pipe';
 import { parkingLotRouting } from './parking-lot.routing';
 import { ParkingLotService } from '../core/services/parking-lot.service';
 import { BrandsService } from '../core/services/brands.service';
+import { CarComponent } from './parking-lot/car/car.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, ReactiveFormsModule, parkingLotRouting],
-  declarations: [ParkingLotComponent, BuyComponent, SellDialogComponent, EnumPipe],
+  declarations: [ParkingLotComponent, BuyComponent, SellDialogComponent, EnumPipe, CarComponent],
   exports: [ParkingLotComponent, BuyComponent],
   providers: [ParkingLotService, BrandsService],
   entryComponents: [SellDialogComponent]

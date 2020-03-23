@@ -1,9 +1,9 @@
 <div class="parking-lot">
   <h3>Lot A</h3>
-  <div class="lot" *ngIf="cars.length > 0">
-    <div *ngFor="let car of cars" [class]="'car-' + car.spot">
+  <div class="lot" *ngIf="cars?.length > 0">
+    <div *ngFor="let car of cars">
       <app-car [car]="car" (clicked)="viewCarDetails(car)"></app-car>
     </div>
   </div>
 </div>
-<p class="availablity">Current Lot Occupancy: {{ cars.length }}</p>
+<p class="availablity">Current Lot Occupancy: {{ cars?.length }}</p>

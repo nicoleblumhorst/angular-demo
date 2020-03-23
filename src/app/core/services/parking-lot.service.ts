@@ -29,12 +29,12 @@ export class ParkingLotService {
   }
 
   private generateSomeCars() {
-    this.cars.push(new Car(2019, 'JEEP', 'Cherokee', Color.Black, 1));
-    this.cars.push(new Car(2017, 'HONDA', 'Accord', Color.Blue, 2));
-    this.cars.push(new Car(2020, 'FORD', 'Explorer', Color.Yellow, 3));
-    this.cars.push(new Car(2016, 'CHEVROLET', 'Silverado', Color.White, 4));
-    this.cars.push(new Car(2018, 'AUDI', 'A4', Color.Silver, 5));
-    this.cars.push(new Car(2005, 'TOYOTA', 'Prius', Color.Red, 7));
-    this.cars.push(new Car(2019, 'JEEP', 'Gladiator', Color.Green, 6));
+    this.cars.push(new Car(2019, 'JEEP', 'Cherokee', Color.Black));
+    this.cars.push(new Car(2017, 'HONDA', 'Accord', Color.Blue));
+    this.cars.push(new Car(2020, 'FORD', 'Explorer', Color.Yellow));
+    this.cars.push(new Car(2016, 'CHEVROLET', 'Silverado', Color.White));
+    this.cars.push(new Car(2018, 'AUDI', 'A4', Color.Silver));
+    this.cars.push(new Car(2005, 'TOYOTA', 'Prius', Color.Red));
+    this.cars.push(new Car(2019, 'JEEP', 'Gladiator', Color.Green));
   }
 }

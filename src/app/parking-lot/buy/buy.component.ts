@@ -27,11 +27,11 @@ export class BuyComponent implements OnInit {
   constructor(
     public router: Router,
     private parkingLotService: ParkingLotService,
-    private vehicleService: BrandsService
+    private brandsService: BrandsService
   ) {}
 
   ngOnInit(): void {
-    this.vehicleService.getVehicleMakes().subscribe(
+    this.brandsService.getVehicleMakes().subscribe(
       data => {
         this.makes = data;
         this.newCar.controls.make.setValue(data[0]);
@@ -47,7 +47,7 @@ export class BuyComponent implements OnInit {
   }
 
   onSubmit(newCar) {
-    this.parkingLotService.buyCar(new Car(newCar.year, newCar.make.name, newCar.model, newCar.color, 0));
+    this.parkingLotService.buyCar(new Car(newCar.year, newCar.make.name, newCar.model, newCar.color));
     this.router.navigateByUrl('/parking-lot');
   }
 

@@ -2,8 +2,11 @@ import {
   MatButtonModule,
   MatCardModule,
   MatDialogModule,
-  MatFormFieldModule, MatGridListModule,
-  MatInputModule, MatListModule, MatProgressSpinnerModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatInputModule,
+  MatListModule,
+  MatProgressSpinnerModule,
   MatSelectModule,
   MatToolbarModule
 } from '@angular/material';

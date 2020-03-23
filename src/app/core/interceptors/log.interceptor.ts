@@ -18,8 +18,9 @@ export class LogInterceptor implements HttpInterceptor {
         if (event instanceof HttpResponse) {
           console.log('Response: ' + JSON.stringify(event.body));
           console.log('Duration: ' + (Date.now() - this.startTime) + 'ms');
-          return event;
         }
+
+        return event;
       })
     );
   }
